@@ -64,3 +64,83 @@
   line-height: 95px;
   color: #FFFFFF;
 }
+
+
+
+/* Offer Container */
+
+.offer-container{
+  height: 880px;
+  width: 802px;
+  margin: 0px auto;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.catagoryes{
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+
+#percentage{
+  font-size: 88px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#color-paragraph{
+  color: #ff0000;
+  font-weight: 500px;
+  font-size: 24px;
+}
+#catagory{
+  font-size: 48px;
+  font-weight: bold;
+  color: #070211;
+}
+
+/* Welcome party */
+
+.new-year-container2{
+  width: 1320px;
+  height: 600px;
+  background-image: url(images/Vectorrr.png);
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joinParty-container{
+  padding: 100px 126px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+#welcome-title{
+  font-size: 64px;
+  line-height: 88px;
+  letter-spacing: 11%;
+  color: #ffffff;
+}
+
+#welcome-description{
+   line-height: 30px;
+   font-size: 18px;
+   font-weight: 400px;
+   color: #ffffff80;
+}
+
+#button-join{
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border: none;
+  background: none;
+  margin-top: 48px;
+  margin-left: 32px;
+  cursor: pointer;
+}

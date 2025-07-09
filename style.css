@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Font collection */
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* New-year-container */
+.tsection{
+  position: relative;
+}
+
+.new-year-container{
+  width: 1320px;
+  height: 600px;
+  background-image: url(images/Banner\ Image.png);
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gradient-bg{
+  background-image: linear-gradient(#070211,#07021181,#07021100);
+  width: 1320px;
+  height: 600px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+} 
+
+.container-content{
+  color: white;
+  height: 245px;
+  width: 630px;
+
+  padding: 100px;
+  text-align: center;
+  margin-left: 250px;
+}
+
+.container-content,p{
+  font-size: 32px;
+  margin-top: 30px;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.container-content,h2{
+  font-size: 72px;
+  font-weight: 700px;
+  line-height: 95px;
+  color: #FFFFFF;
+}

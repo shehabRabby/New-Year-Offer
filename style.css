@@ -218,5 +218,67 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 3px solid darkgreen;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Best Offer */
+.best-offers{
+  text-align: left;
+  width: 500px;
+}
+
+.emoji-2024{
+   text-align: left;
+   width: 400px;
+   margin-left: 25px;
+   
+ }
+
+ .all-offer-here{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+ }
+
+ #comesoon{
+  font-size: 48px;
+  color: #070211;
+  font-weight: 900px;
+  margin-bottom: 20px;
+ }
+
+ #emoji{
+  height: 140px;
+  width: 140px;
+  margin-top: 25px;
+ }
+ .emoji-2024,span{
+  color: #FF0000;
+ }
+
+
+ .circle-frame{
+  height: 460px;
+  width: 460px;
+  border: 20px solid #FF0000;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ #circle_img{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+#welcome-description2{
+   line-height: 32px;
+   font-size: 20px;
+   font-weight: 400px;
+   color: #07021160;
 }

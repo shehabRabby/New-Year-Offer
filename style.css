@@ -144,3 +144,79 @@
   margin-left: 32px;
   cursor: pointer;
 }
+
+
+/* location and time */
+
+.new-year-container3{
+  width: 1320px;
+  height: 480px;
+  background-image: linear-gradient(#ff00002c,#ff000000);
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+ border-radius: 16px;
+  text-align: center;
+}
+
+.time-date span{
+  font-size: 32px;
+  color: #ff0000;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.time-date,p,span{
+  font-size: 32px;
+  color: #070211;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.time-date{
+  height: 272px;
+  width: 520px;
+  align-items: center;
+  padding: 80px 350px;
+}
+
+#button-join2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #FF0000;
+  cursor: pointer;
+  height: 56px;
+  width: 167px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 50px;
+  padding-bottom: 16px 32px;
+}
+
+
+#button-join2:hover{
+ background-color: rgb(168, 11, 216);
+ transition: 1s;
+}
+
+#button-join:hover{
+ background-color: rgb(168, 11, 216);
+ transition: 1s;
+ border-radius: 5px;
+ padding: 10px;
+}
+
+/* Holiday sells */
+
+.new-year-container4{
+  width: 1320px;
+  height: 470px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid darkgreen;
+}

@@ -282,3 +282,93 @@
    font-weight: 400px;
    color: #07021160;
 }
+
+/* Portfolio feature */
+.new-year-container5{
+  width: 1320px;
+  height: 1160px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+ 
+  
+}
+
+.portfolio-title{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.all-feature{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 15px;
+  
+}
+
+/* subscribe part */
+.new-year-container6{
+  width: 1320px;
+  height: 620px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.mssage-box{
+  padding: 40px;
+}
+
+.search-subscribe{
+  height: 72px;
+  width: 650px;
+  display: flex;
+  border-radius: 36px;
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+
+.search-subscribe input{
+  padding-left:30px;
+  margin-left: 0px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 500px;
+  border-radius: 36px 0 0 36px;
+}
+
+.search-subscribe button{
+  width: 210px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 36px  36px 0;
+}
+
+/* Footer */
+.new-year-container7{
+  height: 620px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center;
+  align-items: center; */
+  padding: 10px;
+  background-color: #070211;
+}

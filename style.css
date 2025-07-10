@@ -314,6 +314,109 @@
   
 }
 
+
+/* Hollyday box */
+
+.new-year-container-last{
+  width: 1320px;
+  height: 1000px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.red-box {
+  background: red;
+  padding: 60px ;
+  border-radius: 10px;
+  height: 130px;
+  margin-top: 750px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 350px;
+}
+
+.gift-box {
+  width: 500px; 
+  height:auto;
+  margin-top: -300px;
+}
+
+.shadow {
+  width: 500px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.224);
+  border-radius: 50%;
+  filter: blur(10px);
+  position: absolute;
+}
+
+.discount-badge {
+  width: 300px;
+  margin-top: -500px;
+}
+
+
+ .holiday-sale{
+  width: 1068px;
+  height: 260px;
+  align-items: center;
+  text-align: center;
+ }
+
+
+
+ .new-year-container-last2{
+  width: 1320px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom: -300px;
+}
+
+#description{
+  color:rgba(7, 2, 17, 0.6) ;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+ .holiday-sale{
+  width: 1068px;
+  height: 260px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#holyday{
+  font-size: 72px;
+  font-weight: 900;
+  color: #070211;
+}
+
+#span-holy{
+  color: #FF0000;
+  font-size: 72px;
+  font-weight: 900;
+  
+}
+
+#function{
+  font-size: 24px;
+  font-weight: 500;
+  color: #070211;
+}
+
 /* subscribe part */
 .new-year-container6{
   width: 1320px;
@@ -370,8 +473,6 @@
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  /* text-align: center;
-  align-items: center; */
   padding: 10px;
   background-color: #070211;
 }
@@ -424,9 +525,6 @@ hr {
   opacity: 0.7; 
 
 }
-
-
-
 
 #button-join-last{
   font-size: 24px;

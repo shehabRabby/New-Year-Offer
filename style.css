@@ -1,537 +1,698 @@
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width/height calculations easier */
 }
 
-/* Font collection */
+
+/* Font classes for consistent typography throughout the site */
+
 .merriweather {
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Merriweather", serif;
+    font-style: normal;
 }
 
 .inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #070211;
+}
+
+/* Container class for consistent max-width and centering */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 
-/* New-year-container */
-.tsection{
-  position: relative;
+/* ===== HERO SECTION ===== */
+/* Main banner section with background image  */
+
+.new-year-container {
+    width: 100%;
+    max-width: 1320px;
+    height: 600px;
+    background-image: url('images/Banner\ Image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 50px auto 120px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-.new-year-container{
-  width: 1320px;
-  height: 600px;
-  background-image: url(images/Banner\ Image.png);
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#firstp{
-  color: #FFFFFF;
-  font-weight: 400;
-}
-.gradient-bg{
-  background-image: linear-gradient(#070211,#07021181,#07021100);
-  width: 1320px;
-  height: 600px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-} 
-
-.container-content{
-  color: white;
-  height: 245px;
-  width: 630px;
-  padding: 100px;
-  text-align: center;
-  margin-left: 250px;
+/* Dark gradient */
+.gradient-bg {
+    background: linear-gradient(
+        to bottom,
+        #070211,           
+        rgba(7, 2, 17, 0.5), 
+        rgba(7, 2, 17, 0)   
+    );
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-content,p{
-  font-size: 32px;
-  margin-top: 30px;
-  font-weight: normal;
-  color: #FFFFFF;
+/* Content inside the hero section */
+.container-content {
+    text-align: center;
+    color: white;
+    max-width: 630px;
+    padding: 40px;
 }
 
-.container-content,h2{
-  font-size: 72px;
-  font-weight: 700px;
-  line-height: 95px;
-  color: #FFFFFF;
+/* Hero section text styles */
+#firstp {
+    font-size: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-
-
-/* Offer Container */
-
-.offer-container{
-  height: 880px;
-  width: 802px;
-  margin: 0px auto;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-
-.catagoryes{
-  margin-top: 48px;
-  margin-bottom: 48px;
+.container-content h2 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 95px;
+    color: #FFFFFF;
 }
 
 
-#percentage{
-  font-size: 88px;
-  font-weight: bold;
-  color: #ff0000;
+
+/* ===== OFFER SECTION ===== */
+
+.offer-container {
+    max-width: 802px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-#color-paragraph{
-  color: #ff0000;
-  font-weight: 500;
-  font-size: 24px;
-}
-#catagory{
-  font-size: 48px;
-  font-weight: bold;
-  color: #070211;
+/* Large percentage discount text */
+#percentage {
+    font-size: 88px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
 }
 
-/* Welcome party */
-
-.new-year-container2{
-  width: 1320px;
-  height: 600px;
-  background-image: url(images/Vectorrr.png);
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
+/* Category section with spacing */
+.catagoryes {
+    margin: 48px 0;
 }
 
-.joinParty-container{
-  padding: 100px 126px;
-  display: flex;
-  gap: 40px;
-  align-items: center;
+/* Red accent text for highlights */
+#color-paragraph {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
-#welcome-title{
-  font-size: 64px;
-  line-height: 88px;
-  letter-spacing: 11%;
-  color: #ffffff;
+/* Main category heading */
+#catagory {
+    font-size: 48px;
+    font-weight: bold;
+    color: #070211;
 }
 
-#welcome-description{
-   line-height: 30px;
-   font-size: 18px;
-   font-weight: 400px;
-   color: #ffffff80;
+/* Offer section image */
+.offer-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
 }
 
-#button-join{
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border: none;
-  background: none;
-  margin-top: 48px;
-  margin-left: 32px;
-  cursor: pointer;
+/* ===== WELCOME PARTY SECTION ===== */
+/* Second hero section with party invitation */
+
+.new-year-container2 {
+    width: 100%;
+    max-width: 1320px;
+    height: 600px;
+    background-image: url('images/Vectorrr.png');
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto 120px;
+    border-radius: 16px;
 }
 
-
-/* location and time */
-
-.new-year-container3{
-  width: 1320px;
-  height: 480px;
-  background-image: linear-gradient(#ff00002c,#ff000000);
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
- border-radius: 16px;
-  text-align: center;
+/* Flexbox container for party content */
+.joinParty-container {
+    padding: 100px 60px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
 }
 
-.time-date span{
-  font-size: 32px;
-  color: #ff0000;
-  font-weight: bold;
-  line-height: 40px;
+/* Welcome title styling */
+#welcome-title {
+    font-size: 64px;
+    line-height: 88px;
+    color: #ffffff;
+    margin-bottom: 24px;
 }
 
-.time-date,p,span{
-  font-size: 32px;
-  color: #070211;
-  font-weight: bold;
-  line-height: 40px;
+/* Welcome description text */
+#welcome-description {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 48px;
 }
 
-.time-date{
-  height: 272px;
-  width: 520px;
-  align-items: center;
-  padding: 80px 350px;
+/* Join button styling */
+#button-join {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    padding: 12px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-#button-join2{
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #FF0000;
-  cursor: pointer;
-  height: 56px;
-  width: 167px;
-  border-radius: 8px;
-  border: none;
-  margin-top: 50px;
-  padding-bottom: 16px 32px;
+/* Button hover effect */
+#button-join:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 
-#button-join2:hover{
- background-color: rgb(168, 11, 216);
- transition: 1s;
+/* ===== EVENT DETAILS SECTION ===== */
+/* Location, date, and time information */
+
+.new-year-container3 {
+    width: 100%;
+    max-width: 1320px;
+    height: 480px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.1),
+        rgba(255, 0, 0, 0)
+    );
+    margin: 50px auto 120px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#button-join:hover{
- background-color: rgba(201, 110, 6, 0.84);
- transition: .5s;
- border-radius: 5px;
- padding: 10px;
+/* Event details container */
+.time-date {
+    text-align: center;
+    padding: 40px;
 }
 
-/* Holiday sells */
-
-.new-year-container4{
-  width: 1320px;
-  height: 470px;
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
+/* Event detail paragraphs */
+.time-date p {
+    font-size: 32px;
+    color: #070211;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 16px;
 }
 
-/* Best Offer */
-.best-offers{
-  text-align: left;
-  width: 500px;
+/* Red accent for labels (Place:, Date:, Time:) */
+.time-date span {
+    color: #ff0000;
 }
 
-.emoji-2024{
-   text-align: left;
-   width: 400px;
-   margin-left: 25px;
-   
- }
+/* Second join button with red background */
+#button-join2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
 
- .all-offer-here{
-  display: flex;
-  align-items: center;
-  gap: 5px;
- }
+/* Button hover effects */
+#button-join2:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
 
- #comesoon{
-  font-size: 48px;
-  color: #070211;
-  font-weight: 900px;
-  margin-bottom: 20px;
- }
+/* ===== BEST OFFERS SECTION ===== */
+/* Three-column layout with offers and circular image */
 
- #emoji{
-  height: 140px;
-  width: 140px;
-  margin-top: 25px;
- }
- .emoji-2024,span{
-  color: #FF0000;
- }
+.new-year-container4 {
+    width: 100%;
+    max-width: 1320px;
+    margin: 50px auto 120px;
+    padding: 40px 20px;
+}
 
+/* Flexbox container for three columns */
+.all-offer-here {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
- .circle-frame{
-  height: 460px;
-  width: 460px;
-  border: 20px solid #FF0000;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Left column - Best offers text */
+.best-offers {
+    flex: 1;
+    text-align: left;
+}
+
+/* Center column - Circular image frame */
+.circle-frame {
+    width: 460px;
+    height: 460px;
+    border: 20px solid #FF0000;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Image inside circle */
+#circle_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right column - 2024 content */
+.emoji-2024 {
+    flex: 1;
+    text-align: left;
+}
+
+/* Large heading text */
+#comesoon {
+    font-size: 48px;
+    color: #070211;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+/* Emoji styling */
+#emoji {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+}
+
+/* Red text for year */
+.emoji-2024 span {
+    color: #FF0000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Description text styling */
+#welcome-description2 {
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(7, 2, 17, 0.6);
+    margin-top: 16px;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+/* Product showcase grid */
+
+.new-year-container5 {
+    width: 100%;
+    max-width: 1320px;
+    margin: 50px auto 120px;
+    padding: 40px 20px;
+}
+
+/* Portfolio title section */
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Product grid container */
+.all-feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Individual product item */
+.item-box {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Product image styling */
+.item-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hover effect for product items */
+.item-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 
- #circle_img{
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
+/* ===== GIFT BOX SECTION ===== */
+/* Red box with gift and discount badge */
+
+.new-year-container-last {
+    width: 100%;
+    max-width: 1320px;
+    margin: 50px auto 120px;
+    padding: 20px;
 }
 
-#welcome-description2{
-   line-height: 32px;
-   font-size: 20px;
-   font-weight: 400px;
-   color: #07021160;
-}
-
-/* Portfolio feature */
-.new-year-container5{
-  width: 1320px;
-  height: 1160px;
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 16px;
- 
-  
-}
-
-.portfolio-title{
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-.all-feature{
-  display: flex;
-  flex-wrap:wrap;
-  gap: 15px;
-  
-}
-
-
-/* Hollyday box */
-
-.new-year-container-last{
-  width: 1320px;
-  height: 1000px;
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-}
-
+/* Red background box */
 .red-box {
-  background: red;
-  padding: 60px ;
-  border-radius: 10px;
-  height: 130px;
-  margin-top: 750px;
+    background: #FF0000;
+    padding: 60px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
 }
 
+/* Content container with flexbox */
 .content {
-  display: flex;
-  align-items: flex-start;
-  gap: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
+/* Gift box container with shadow */
+.gift-box-container {
+    position: relative;
+    flex: 1;
+}
+
+/* Gift box image */
 .gift-box {
-  width: 500px; 
-  height:auto;
-  margin-top: -300px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    z-index: 2;
 }
 
+/* Shadow effect under gift box */
 .shadow {
-  width: 500px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.224);
-  border-radius: 50%;
-  filter: blur(10px);
-  position: absolute;
+    width: 80%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(15px);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
+/* Discount badge */
 .discount-badge {
-  width: 300px;
-  margin-top: -500px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 
- .holiday-sale{
-  width: 1068px;
-  height: 260px;
-  align-items: center;
-  text-align: center;
- }
+/* ===== HOLIDAY SALE SECTION ===== */
+/* Text section for holiday sale announcement */
 
-
-
- .new-year-container-last2{
-  width: 1320px;
-  height: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  bottom: -300px;
+.new-year-container-last2 {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto 50px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-#description{
-  color:rgba(7, 2, 17, 0.6) ;
-  font-size: 20px;
-  font-weight: 400;
+.holiday-sale {
+    max-width: 1068px;
+    margin: 0 auto;
 }
 
- .holiday-sale{
-  width: 1068px;
-  height: 260px;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+/* Function label */
+#function {
+    font-size: 24px;
+    font-weight: 500;
+    color: #070211;
+    margin-bottom: 16px;
 }
 
-#holyday{
-  font-size: 72px;
-  font-weight: 900;
-  color: #070211;
+/* Main holiday heading */
+#holyday {
+    font-size: 72px;
+    font-weight: 900;
+    color: #070211;
+    margin-bottom: 24px;
 }
 
-#span-holy{
-  color: #FF0000;
-  font-size: 72px;
-  font-weight: 900;
-  
+/* Red accent for "Holidays" */
+#span-holy {
+    color: #FF0000;
 }
 
-#function{
-  font-size: 24px;
-  font-weight: 500;
-  color: #070211;
+/* Description text */
+#description {
+    color: rgba(7, 2, 17, 0.6);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
-/* subscribe part */
-.new-year-container6{
-  width: 1320px;
-  height: 620px;
-  margin-top: 50px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-  background-color: rgba(255, 0, 0, 0.05);
-  border-radius: 16px;
+/* ===== NEWSLETTER SECTION ===== */
+/* Email subscription section */
+
+.new-year-container6 {
+    width: 100%;
+    max-width: 1320px;
+    margin: 50px auto 120px;
+    padding: 60px 20px;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 16px;
+    text-align: center;
 }
 
-.mssage-box{
-  padding: 40px;
+/* Message box with icon and text */
+.mssage-box {
+    margin-bottom: 40px;
 }
 
-.search-subscribe{
-  height: 72px;
-  width: 650px;
-  display: flex;
-  border-radius: 36px;
-  overflow: hidden;
-  margin-left: 300px;
+.mssage-box img {
+    max-width: 100px;
+    margin-bottom: 20px;
 }
 
-
-.search-subscribe input{
-  padding-left:30px;
-  margin-left: 0px;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  width: 500px;
-  border-radius: 36px 0 0 36px;
+/* Email subscription form */
+.search-subscribe {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.search-subscribe button{
-  width: 210px;
-  background-color: #FF0000;
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0 36px  36px 0;
+/* Email input field */
+.search-subscribe input {
+    flex: 1;
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: white;
 }
 
-/* Footer */
-.new-year-container7{
-  height: 620px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  background-color: #070211;
+/* Subscribe button */
+.search-subscribe button {
+    padding: 20px 40px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#part1and2{
-  font-size: 24px;
-  font-weight: 500px;
-  line-height: 15px;
-  color: #FFFFFF;
+.search-subscribe button:hover {
+    background-color: #cc0000;
 }
 
-#part1and2 img{
-  margin-right: 10px;
-  margin-top: 10px;
-  align-items: center;
-  justify-content: center;
+/* ===== FOOTER SECTION ===== */
+/* Site footer with contact info and social links */
+
+.new-year-container7 {
+    background-color: #070211;
+    padding: 80px 20px 40px;
+    color: white;
 }
 
-.footer-content1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:100px 300px;
+/* Footer content sections */
+.footer-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    gap: 40px;
 }
 
-.footer-content2{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  gap: 30px;
+/* Contact information styling */
+.part1 {
+    flex: 1;
 }
 
-.part3{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 300px;
-  padding-right: 300px;
-  margin-top: 50px;
+#part1and2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    color: #FFFFFF;
+    margin-bottom: 8px;
 }
 
+/* Icon spacing in contact info */
+#part1and2 img {
+    margin-right: 12px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+/* Social media links */
+.footer-content2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.footer-content2 img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.footer-content2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Bottom footer section */
+.footer-content3 {
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.part3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Unsubscribe button */
+#button-join-last {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#button-join-last:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Horizontal divider lines */
 hr {
-  height: 2px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  background-color: #2d2a32;
-  opacity: 0.7; 
-
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-#button-join-last{
-  font-size: 24px;
-  font-weight: 500px;
-  color: #FFFFFF;
-  border: none;
-  background: none;
-  margin-top: 10px;
-  cursor: pointer;
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile and tablet adjustments */
+
+@media (max-width: 768px) {
+    /* Adjust hero text size for mobile */
+    .container-content h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    #firstp {
+        font-size: 24px;
+    }
+    
+    /* Stack party content vertically on mobile */
+    .joinParty-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 30px;
+    }
+    
+    /* Adjust offer layout for mobile */
+    .all-offer-here {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .circle-frame {
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* Stack footer content on mobile */
+    .footer-content1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .part3 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* Adjust grid for mobile */
+    .all-feature {
+        grid-template-columns: 1fr;
+    }
 }
